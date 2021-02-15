@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  color: #444;
+}
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+.header h1 {
+  font-size: 40px;
+}
+/* メニューバースタイル */
+.menu {
+  overflow: hidden;
+  background-color: orange;
+}
+.menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* ブログカードスタイル */
+.left-content {
+  float: left;
+  width: 75%;
+}
+.card {
+  background-color: #f0e68c;
+  padding: 20px;
+  margin-top: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+/* 右サイドバースタイル */
+.right-content {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+/* 右サイドバースタイル */
+.bottom-space {
+  margin-bottom: 10px;
+}
+
+/* フッタースタイル */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: orange;
+  margin-top: 20px;
+}
+.footer h2 {
+  color: #fff;
+}
+.contents::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ::afterでfloatのコンテンツに対して解消している。疑似要素 */
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 800px) {
+  .left-content,
+  .right-content {
+    width: 100%;
+    padding: 0;
+  }
+}
